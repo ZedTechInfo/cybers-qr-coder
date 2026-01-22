@@ -1,6 +1,6 @@
 {
   "name": "Offline QR Code Generator",
-  "short_name": "QR Gen",
+  "short_name": "Cyber QR Gen",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
