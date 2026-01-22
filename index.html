@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline QR Code Generator</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#333333">
+    <meta property="og:title" content="Offline QR Code Generator">
+    <meta property="og:description"
+        content="Generate QR codes instantly and completely offline. Secure, fast, and no data leaves your device.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="icon-192.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Offline QR Code Generator</h1>
+        <p class="subtitle">Generate QR codes without an internet connection</p>
+
+        <div class="input-group">
+            <input type="text" id="qr-text" placeholder="Enter text or URL to encode" autofocus>
+        </div>
+
+        <div>
+            <button id="generate-btn">Generate QR Code</button>
+            <button id="download-btn" class="secondary">Download QR Code</button>
+        </div>
+
+        <div class="qr-container">
+            <!-- This div will contain the generated QR Code -->
+            <div id="qrcode-container"></div>
+            <p id="placeholder-text">Your QR code will appear here</p>
+        </div>
+
+        <div class="instructions">
+            <p><strong>How to use:</strong> Enter any text or URL, then click "Generate QR Code". You can scan the QR
+                code with any QR scanner app.</p>
+        </div>
+
+        <div class="footer">
+            <p>Works completely offline • No data is sent to any server</p>
+        </div>
+    </div>
+
+    <!-- *** IMPORTANT: Link to the LOCAL qrcode.js file *** -->
+    <script src="qrcode.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
